@@ -1,0 +1,192 @@
+
+
+.imageclass {
+    position: relative;
+    background: url('https://demo.htmlcodex.com/959/consulting-website-template/img/carousel-2.jpg') no-repeat center center;
+    background-size: cover;
+    height: 550px; /* Full viewport height for better responsiveness */
+    width: 100%;
+  }
+  
+  .imageclass .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay */
+    color: #ffffff; /* Text color */
+  }
+  
+  .imageclass h1, .imageclass p {
+    color: #ffffff; /* Ensure text is white */
+  }
+  
+
+  /* ////////////  card section start ///////////////*/
+   .services {
+  background-color: #f9f9f9; /* Light background for contrast */
+}
+
+.services .investor-box {
+  background-color: #d4edda; /* Light green background */
+  padding: 30px;
+  text-align: center;
+  width: 100%;
+  min-height: 200px; /* Increased height */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+  border-radius: 8px; /* Rounded corners */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.investor-box{
+    background-color: #ffffff !important;
+}
+
+.services  .card-header {
+  font-size: 40px; /* Larger icon */
+  color: #28a745; /* Green color */
+  margin-bottom: 20px;
+}
+
+.services .investor-box h2 {
+  font-size: 24px;
+  color: #155724; /* Darker green color */
+  margin: 0;
+}
+
+.services .investor-box:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* More pronounced shadow on hover */
+}
+
+/* Additional CSS for mobile view spacing */
+@media (max-width: 767.98px) {
+  .services .col-sm-6 {
+    margin-bottom: 1rem; /* Add space between cards on mobile view */
+  }
+}
+  /* ////////////  card section end ///////////////*/
+
+
+/* ////////////////////////////// */
+/* Ensure the image is responsive and maintains aspect ratio */
+.container img {
+    max-width: 100%;
+    height: 383px;
+  }
+  
+  /* Optional: Rounded corners for the image */
+  .rounded {
+    border-radius: 8px;
+  }
+  
+  /* Adjustments for smaller screens */
+  @media (max-width: 767.98px) {
+    section {
+      padding: 15px; /* Add padding for better spacing on mobile */
+    }
+  
+    .row {
+      text-align: center; /* Center text on small screens */
+    }
+  
+    .col-lg-6 {
+      margin-bottom: 1rem; /* Add margin bottom for spacing */
+    }
+  }
+  /* ///////////////////////////////// */
+
+  /* Blog Section Styling */
+.blog-item {
+    position: relative;
+  }
+  
+  .blog-item img {
+    width: 100%;
+    height: auto; /* Ensures image maintains aspect ratio */
+  }
+  
+  .blog-content {
+    background-color: #fff;
+    color: #092a49;
+    /* border: 1px solid brown; */
+    padding: 15px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 150px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  .blog-content h4 {
+    margin-top: 0;
+    font-size: 18px;
+  }
+  
+  .blog-content p {
+    margin-bottom: 0;
+    font-size: 14px;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .blog-content {
+      height: auto; /* Allows height to adjust based on content on smaller screens */
+      position: relative;
+    }
+  }
+  
+
+  /* //////////////////////////////// */
+  /* Section styles */
+.service-section {
+  background-color: #f9f9f9; /* Light background for contrast */
+  padding: 50px 0; /* Add padding for spacing */
+}
+
+.service-section h1 {
+  color: #092a49; /* Heading color */
+  margin-bottom: 40px; /* Spacing below the heading */
+}
+
+/* Service box styles */
+.service-box {
+  background-color: #ffffff; /* Light blue background */
+  padding: 30px;
+  text-align: center;
+  width: 100%;
+  min-height: 200px; /* Increased height */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+  border-radius: 8px; /* Rounded corners */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-box  {
+  font-size: 40px; /* Larger icon */
+  color: #007bff; /* Blue color for icons */
+  margin-bottom: 20px;
+}
+.icon-container {
+  font-size: 40px; /* Larger icon */
+  color:green; /* Blue color for icons */
+  margin-bottom: 20px;
+}
+
+.service-box h2 {
+  font-size: 24px;
+  color: #0056b3; /* Darker blue color */
+  margin: 0;
+}
+
+.service-box:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* More pronounced shadow on hover */
+}
+
+/* Additional CSS for mobile view spacing */
+@media (max-width: 767.98px) {
+  .service-section .col-sm-6 {
+    margin-bottom: 1rem; /* Add space between cards on mobile view */
+  }
+}
