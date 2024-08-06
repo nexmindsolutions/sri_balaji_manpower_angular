@@ -15,7 +15,7 @@
 
 .contact .contact-info:hover {
     border-color: transparent;
-    box-shadow: 0 0 30px rgba(0, 0, 0, .1);
+    box-shadow: 0 0 30px #188af5;
 }
 
 .contact .contact-icon {
@@ -62,7 +62,7 @@
 
 .contact .contact-form:hover {
     border-color: transparent;
-    box-shadow: 0 0 30px rgba(0, 0, 0, .1);
+    box-shadow: 0 0 30px #188af5;
 }
 
 .contact .contact-form input {
