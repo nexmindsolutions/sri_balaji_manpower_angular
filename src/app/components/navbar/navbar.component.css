@@ -1,56 +1,64 @@
-/* Basic styling for the navbar */
-.navbar {
-   z-index: 99999;
+
+
+#navcmd{
+  background-color: #092a49 !important;
+}
+.navbar-brand img{
+  height: 58px;
+  width: 130px; 
+}
+
+.navbar-toggler {
+  background-color: white !important; 
+  color: #ffffff !important;/* White background color */
+  border: none; /* Remove border */
+  box-shadow: none; /* Remove box shadow */
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active {
+  box-shadow: none; /* Ensure no shadow on focus or active state */
+}
+
+
+
+.nav-link {
+  font-size: 15px; 
+  text-align: center;
+  font-weight: bold;
+  color: #ffffff;
+  transition: color 0.5s;
+}
+
+.nav-link:hover {
+  color: #17a2b8; 
+  transition: color 0.5s;
+}
+
+
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+      background-color: #092a49;
   }
-  
-  .navbar-brand .logo {
-    height: 73px;
-    width: 143px;
+
+  .navbar-collapse.show {
+      opacity: 1;
+      transition: opacity 0.5s, top 0.5s;
+      top: 70px; 
   }
-  
-  .navbar-nav .nav-link {
-    /* font-weight: bold; */
-    color: #333;
-    transition: color 0.3s, background-color 0.3s;
+
+  .navbar-collapse {
+      opacity: 0;
+      top: -400px;
+      transition: opacity 0.5s, top 0.5s;
   }
-  
-  .navbar-nav .nav-link:hover {
-    color: #007bff;
-    background-color: rgba(0, 123, 255, 0.1); /* Light blue background on hover */
+  .navbar-toggler{
+      background: none;
+      border: none;
   }
-  
-  /* Toggler styling */
-  .navbar-toggler {
-    border: none;
-    background: none;
+  .nav-link{
+    color: #ffffff ; 
+
   }
-  
-  .navbar-toggler-icon {
-    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"%3E%3Cpath stroke="rgba(0, 0, 0, 0.5)" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E');
-  }
-  
-  /* Responsive styling */
-  @media (max-width: 991.98px) {
-    .navbar-light .navbar-nav .nav-link {
-      padding: 0.5rem 1rem;
-    }
-  
-    .navbar-collapse {
-      background-color: #343a40; /* Dark background for mobile view */
-    }
-  
-    .navbar-nav .nav-link {
-      color: #ffffff; /* White text color for mobile view */
-    }
-  
-    .navbar-nav .nav-link:hover {
-      background-color: rgba(255, 255, 255, 0.2); /* Lighter hover effect for mobile */
-    }
-  }
-  
-  @media (min-width: 992px) {
-    .navbar-light .navbar-nav .nav-link {
-      padding: 0.5rem 1rem;
-    }
-  }
-  
+} 
+
