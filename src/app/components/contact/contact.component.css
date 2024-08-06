@@ -9,13 +9,15 @@
     display: flex;
     padding: 30px;
     border: 1px solid rgba(0, 0, 0, .1);
-    margin-bottom: 30px;
-    transition: .3s;
+    margin-bottom: 22px;
+    transition: .4s;
+    margin-top: 9px;
 }
 
 .contact .contact-info:hover {
     border-color: transparent;
-    box-shadow: 0 0 30px #188af5;
+    box-shadow: 0 0 6px #c4c9ce;
+
 }
 
 .contact .contact-icon {
@@ -25,12 +27,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid rgba(0, 0, 0, .1);
+    border: 02px solid rgba(0, 0, 0, .1);
+    border-radius: 50%;
 }
 
 .contact .contact-icon i {
-    font-size: 18px;
-    color: #0796fe;
+    font-size: 19px;
+    color: coral;
+    padding: 15px;
 }
 
 .contact .contact-text {
@@ -41,13 +45,37 @@
 }
 
 .contact .contact-text h3 {
+    font-size: 17px;
+    font-weight: 500;
+    color: #092a49;
+    letter-spacing: 1px;
+}
+
+.contact .contact-text p {
+    margin: 0;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.contact .contact-text p:hover {
+text-decoration: underline;
+}
+
+.contact .contact-address {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+}
+
+.contact .contact-address h3 {
     font-size: 16px;
     font-weight: 400;
     color: #092a49;
     letter-spacing: 1px;
 }
 
-.contact .contact-text p {
+.contact .contact-address p {
     margin: 0;
     font-size: 16px;
 }
@@ -62,13 +90,14 @@
 
 .contact .contact-form:hover {
     border-color: transparent;
-    box-shadow: 0 0 30px #188af5;
+    box-shadow: 0 0 6px #c4c9ce;
 }
 
 .contact .contact-form input {
     padding: 15px;
     background: none;
     border-radius: 0;
+    margin-bottom: 6px;
     border: 1px solid rgba(0, 0, 0, .1);
 }
 
@@ -81,20 +110,21 @@
 }
 
 .contact .contact-form .btn {
-    padding: 15px 30px;
-    font-size: 16px;
+    padding: 12px 24px;
+    margin-top: 15px;
+    font-size: 18px;
     font-weight: 600;
     letter-spacing: 1px;
     color: #092a49;
     background: none;
     border: 2px solid #092a49;
-    border-radius: 0;
+    border-radius: 5%;
     transition: .3s;
 }
 
 .contact .contact-form .btn:hover {
-    color: #0796fe;
-    background: #092a49;
+    color: coral;
+    background: #12263a;
 }
 
 .contact .help-block ul {
@@ -102,6 +132,14 @@
     padding: 0;
     list-style-type: none;
 }
+
+/* .map{
+    margin-top: 20px;
+} */
+
+/* .map .h2{
+    margin-bottom: 18px;
+} */
 
 
 /*******************************/
