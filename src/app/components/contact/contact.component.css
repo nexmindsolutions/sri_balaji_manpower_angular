@@ -4,6 +4,10 @@
     padding: 45px 0 15px 0;
 }
 
+.container h1{
+    margin-top: 50px;
+}
+
 .contact .contact-info {
     position: relative;
     display: flex;
