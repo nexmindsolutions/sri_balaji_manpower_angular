@@ -1,5 +1,6 @@
 import { Component,OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { FormservicesService } from '../../formservices.service';
 
 @Component({
   selector: 'app-home-page',
@@ -10,6 +11,8 @@ export class HomePageComponent implements OnInit{
 
 
   formVisible:boolean=false;
+  sucess:boolean=false;
+  failure:boolean=false;
   contactForm: FormGroup;
 
   services: string[] = [
@@ -29,7 +32,7 @@ export class HomePageComponent implements OnInit{
     'Security Officers & Guards'
   ];
 
-  constructor(private fb: FormBuilder) {
+  constructor(private fb: FormBuilder, private server:FormservicesService) {
   
     this.contactForm = this.fb.group({
       fullname: ['', [Validators.required, Validators.pattern('^[a-zA-Z ]+$')]],
@@ -44,10 +47,25 @@ ngOnInit(): void {
 }
 onSubmit() {
   if (this.contactForm.valid) {
-    console.log(this.contactForm.value);
+  
+    this.server.submitForm(this.contactForm.value).subscribe(res=>{
+      if(res&&res==='Form submitted successfully!'){
+
+        setTimeout(()=>{
+          this.formVisible=false;
+        } , 2000)
+         
+      }
+      else{
+      
+      }
+
+    })
+
   } else {
     console.log('Form is not valid');
   }
+  
 }
 formvisible(){
   this.formVisible=true;
