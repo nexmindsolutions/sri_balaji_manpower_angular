@@ -12,6 +12,7 @@ export class HomePageComponent implements OnInit{
 
   formVisible:boolean=false;
   sucess:boolean=false;
+  success: boolean=false;
   failure:boolean=false;
   contactForm: FormGroup;
 
@@ -32,6 +33,7 @@ export class HomePageComponent implements OnInit{
     'Security Officers & Guards'
   ];
 
+
   constructor(private fb: FormBuilder, private server:FormservicesService) {
   
     this.contactForm = this.fb.group({
@@ -47,25 +49,29 @@ ngOnInit(): void {
 }
 onSubmit() {
   if (this.contactForm.valid) {
-  
-    this.server.submitForm(this.contactForm.value).subscribe(res=>{
-      if(res&&res==='Form submitted successfully!'){
-
-        setTimeout(()=>{
-          this.formVisible=false;
-        } , 2000)
-         
-      }
-      else{
+    this.server.submitForm(this.contactForm.value).subscribe(
+      res => {
+        if (res && res.message === 'Form submitted successfully!') {
+          this.success = true;
+          setTimeout(() => {
+            this.contactForm.reset();
+          }, 1000);
       
+          setTimeout(() => {
+            this.formVisible = false;
+          }, 2000);
+        } else {
+          this.failure = true;
+        }
+      },
+      error => {
+        console.error('Error submitting form:', error);
+        this.failure = true;
       }
-
-    })
-
+    );
   } else {
     console.log('Form is not valid');
   }
-  
 }
 formvisible(){
   this.formVisible=true;

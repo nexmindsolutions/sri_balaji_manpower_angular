@@ -371,6 +371,12 @@
           <textarea id="message" class="form-control" formControlName="message"></textarea>
         </div>
         <button type="submit" class="btn btn-primary w-100">Submit</button>
+        <div *ngIf="success">
+           <p class="text-success">register Success fully</p>
+        </div>
+        <div *ngIf="failure">
+          <p class="text-danger">something went wrong</p>
+        </div>
       </form>
     </div>
   </div>
