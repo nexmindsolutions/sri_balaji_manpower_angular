@@ -27,13 +27,54 @@
 }
 
 
-/* /////////////////////////////// */
+
+
+/*  */
 .imageclass {
+  position: relative;
+  height: 550px; /* Adjust as needed */
+  width: 100%;
+  overflow: hidden; /* Hide any overflow from the video */
+}
+
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the video covers the area */
+  z-index: -1; /* Place the video behind the overlay */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6); /* Dark overlay */
+  color: #ffffff; /* Text color */
+  z-index: 1; /* Ensure the overlay is above the video */
+}
+
+.overlay h1, .overlay p {
+  color: #ffffff; /* Ensure text is white */
+}
+
+/*  */
+
+
+
+
+
+/* /////////////////////////////// */
+/* .imageclass {
     position: relative;
     z-index: -1;
     background: url('https://demo.htmlcodex.com/959/consulting-website-template/img/carousel-2.jpg') no-repeat center center;
     background-size: cover;
-    height: 550px; /* Full viewport height for better responsiveness */
+    height: 550px; 
     width: 100%;
   }
   
@@ -43,14 +84,14 @@
     left: 0;
     height: 100%;
     width: 100%;
-    background: rgba(0, 0, 0, 0.6); /* Dark overlay */
-    color: #ffffff; /* Text color */
+    background: rgba(0, 0, 0, 0.6); 
+    color: #ffffff; 
   }
   
   .imageclass h1, .imageclass p {
-    color: #ffffff; /* Ensure text is white */
+    color: #ffffff; 
   }
-  
+   */
 
   /* ////////////  card section start ///////////////*/
    .services {
