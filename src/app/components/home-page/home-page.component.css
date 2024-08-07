@@ -126,38 +126,55 @@
   /* ///////////////////////////////// */
 
   /* Blog Section Styling */
+/* Blog Section Styling */
 .blog-item {
-    position: relative;
+  position: relative;
+  background-color: #fff; /* Ensure a clean background for better readability */
+  border-radius: 8px; /* Rounded corners for a modern look */
+  overflow: hidden; /* Ensure content doesn't spill outside the card */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for better visibility */
+  min-height: 500px; /* Increased height for the card */
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-item img {
+  width: 100%; /* Ensure the image covers the full width of the card */
+  height: auto; /* Maintain aspect ratio of the image */
+  display: block; /* Remove extra space below the image */
+}
+
+.blog-content {
+  background-color: #fff;
+  color: #092a49;
+  padding: 20px; /* Increased padding for better spacing */
+  flex: 1; /* Allow content to fill available space */
+}
+
+.blog-content h4 {
+  margin-top: 0;
+  font-size: 22px; /* Larger heading for better visibility */
+  margin-bottom: 15px; /* Space below the heading */
+}
+
+.blog-content p {
+  margin-bottom: 0;
+  font-size: 16px; /* Adjust font size for better readability */
+  line-height: 1.6; /* Increased line height for readability */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .blog-item {
+      min-height: auto; /* Allow height to adjust based on content on smaller screens */
   }
-  
-  .blog-item img {
-    width: 100%;
-    height: auto; /* Ensures image maintains aspect ratio */
-  }
-  
+
   .blog-content {
-    background-color: #fff;
-    color: #092a49;
-    /* border: 1px solid brown; */
-    padding: 15px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 150px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      height: auto; /* Allow height to adjust based on content */
+      padding: 15px; /* Adjust padding for smaller screens */
   }
-  
-  .blog-content h4 {
-    margin-top: 0;
-    font-size: 18px;
-  }
-  
-  .blog-content p {
-    margin-bottom: 0;
-    font-size: 14px;
-  }
-  
+}
+
   /* Responsive Styles */
   @media (max-width: 768px) {
     .blog-content {
@@ -219,3 +236,5 @@
     margin-bottom: 1rem; /* Add space between cards on mobile view */
   }
 }
+
+
