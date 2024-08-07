@@ -340,18 +340,7 @@ body {
     padding-right: 15px;
     padding-bottom: 1px;
     padding-left: 15px;
-    border-top-width: 2px;
-    border-right-width: 2px;
-    border-bottom-width: 2px;
-    border-left-width: 2px;
-    border-top-style: solid;
-    border-right-style: solid;
-    border-bottom-style: solid;
-    border-left-style: solid;
-    border-top-color: #eeeeee;
-    border-right-color: #eeeeee;
-    border-bottom-color: #eeeeee;
-    border-left-color: #eeeeee;
+    border: 2px solid rgb(240, 240, 240);
     border-image-source: initial;
     border-image-slice: initial;
     border-image-width: initial;
@@ -389,34 +378,24 @@ body {
   }
   
   .contact_us_6 .submit-btn {
-    width: 98%;
+    width: 220px;
     background-color: #03a9f4;
     height: 60px;
     font-size: 20px;
     font-weight: 700;
     color: white;
-    border-top-width: 0px;
-    border-right-width: 0px;
-    border-bottom-width: 0px;
-    border-left-width: 0px;
-    border-top-style: outset;
-    border-right-style: outset;
-    border-bottom-style: outset;
-    border-left-style: outset;
-    border-top-color: #767676;
-    border-right-color: #767676;
-    border-bottom-color: #767676;
-    border-left-color: #767676;
-    border-image-source: initial;
-    border-image-slice: initial;
-    border-image-width: initial;
-    border-image-outset: initial;
-    border-image-repeat: initial;
-    border-top-left-radius: 40px;
-    border-top-right-radius: 40px;
-    border-bottom-right-radius: 40px;
-    border-bottom-left-radius: 40px;
+    border: 1px solid #03a9f4;
+    border-radius: 40px;
+
   }
+
+  .contact_us_6 .submit-btn:hover{
+    border: 2px solid #017eb8;
+    color: white;
+    background-color: #0089c9;
+  
+}
+
   
   .contact_us_6 .form-box {
     z-index: 2;
@@ -437,7 +416,7 @@ body {
     margin-right: 0px;
     margin-bottom: 5px;
     margin-left: 0px;
-    color: #9c9c9c;
+    color: #2b2b2b;
   }
   
   .contact_us_6 ::placeholder {
@@ -707,6 +686,8 @@ body {
     .contact_us_6 .text-blk.contactus-head {
       font-size: 32px;
       line-height: 40px;
+      color: rgb(0, 0, 72);
+      font-family: 'Times New Roman', Times, serif;
     }
   }
   
