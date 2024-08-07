@@ -1,7 +1,10 @@
 
 
 #navcmd{
-  background-color: #092a49 !important;
+  background-color: #ffffff !important;
+  position:sticky;
+  top: 0px;
+  z-index: 999;
 }
 .navbar-brand img{
   height: 58px;
@@ -10,7 +13,7 @@
 
 .navbar-toggler {
   background-color: white !important; 
-  color: #ffffff !important;/* White background color */
+  color: #092a49!important;/* White background color */
   border: none; /* Remove border */
   box-shadow: none; /* Remove box shadow */
 }
@@ -26,7 +29,7 @@
   font-size: 15px; 
   text-align: center;
   font-weight: bold;
-  color: #ffffff;
+  color: #092a49;
   transition: color 0.5s;
 }
 
@@ -62,3 +65,21 @@
   }
 } 
 
+.navbar-custom {
+  background-color: #007bff;
+}
+.navbar-custom .navbar-nav .nav-link {
+  color: white;
+  font-weight: bold;
+}
+.navbar-custom .navbar-brand img {
+  height: 40px;
+}
+.navbar-custom .navbar-text {
+  color: white;
+}
+.navbar-custom .social-icons a {
+  color: white;
+  margin-left: 10px;
+  font-size: 18px;
+}

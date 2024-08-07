@@ -1,26 +1,46 @@
 
-<nav class="navbar navbar-expand-lg navbar-light bg-white shadow fixed-top" id="navcmd">
-  <a class="navbar-brand" href="#">
-      <img class="h-10 mx-4" src="https://t3.ftcdn.net/jpg/05/21/37/96/360_F_521379673_CSAgf0gMSlPThHySNGLYRRrDNw4Q7vCc.jpg" alt="Logo">
-    
-  </a>
-  <button class="navbar-toggler" type="button" (click)="toggleMenu()">
-      <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse  mx-4" [ngClass]="{'show': isMenuOpen}" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-              <a class="nav-link" [routerLink]="['/home-page']">HOME</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link" [routerLink]="['/services-page']">SERVICE</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link" [routerLink]="['/aboutus']">ABOUT</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link" [routerLink]="['/contact']">CONTACT</a>
-          </li>
-      </ul>
-  </div>
-</nav> 
+  <!-- First Navbar with contact info and social media icons -->
+  <nav class="navbar navbar-expand-lg navbar-custom">
+    <div class="container">
+        <span class="navbar-text">
+            <i class="fas fa-phone-alt" style="margin-left: 4px;"></i> +413-2619-789 &nbsp;
+            <i class="fas fa-envelope" style="margin-left: 78px;"></i> supportultranet.com
+
+        </span>
+        <div class="ml-auto social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-google-plus-g"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </div>
+</nav>
+
+<!-- Second Navbar with navigation links -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow" id="navcmd">
+    <a class="navbar-brand" href="#">
+        <img class="h-10 mx-4" src="https://t3.ftcdn.net/jpg/05/21/37/96/360_F_521379673_CSAgf0gMSlPThHySNGLYRRrDNw4Q7vCc.jpg" alt="Logo">
+      
+    </a>
+    <button class="navbar-toggler" type="button" (click)="toggleMenu()">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse  mx-4" [ngClass]="{'show': isMenuOpen}" id="navbarNav" style="margin-right: 40px;">
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+                <a class="nav-link" [routerLink]="['/home-page']">HOME</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" [routerLink]="['/services-page']">SERVICE</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" [routerLink]="['/aboutus']">ABOUT</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" [routerLink]="['/contact']">CONTACT</a>
+            </li>
+        </ul>
+    </div>
+  </nav>
+
