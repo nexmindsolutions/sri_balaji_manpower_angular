@@ -70,10 +70,10 @@
 
 
 /* /////////////////////////////// */
-/* .imageclass {
+.imageclass {
     position: relative;
     z-index: -1;
-    background: url('https://demo.htmlcodex.com/959/consulting-website-template/img/carousel-2.jpg') no-repeat center center;
+    background: url('https://ecoglowcleaning.com/wp-content/uploads/2022/11/Cleaning-service-employees-wit.jpg') no-repeat center center;
     background-size: cover;
     height: 550px; 
     width: 100%;
@@ -84,7 +84,7 @@
   .imageclass h1, .imageclass p {
     color: #ffffff; 
   }
-   */
+  
 
    .imageclass .overlay {
     position: absolute;
