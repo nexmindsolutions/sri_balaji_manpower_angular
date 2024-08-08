@@ -8,7 +8,8 @@ import { AboutusComponent } from './components/aboutus/aboutus.component';
 
 
 const routes: Routes = [
-  {path:'',redirectTo:'/home-page',pathMatch:'full'},
+  // {path:'',redirectTo:'/home-page',pathMatch:'full'},
+  {path:'',component:HomePageComponent},
   {path:'home-page',component:HomePageComponent},
   {path : 'contact', component : ContactComponent},
   {path:'services-page',component:ServicesComponent},
