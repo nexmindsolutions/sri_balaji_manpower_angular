@@ -4,6 +4,7 @@ import { HomePageComponent } from './components/home-page/home-page.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { ServicesComponent } from './components/services/services.component';
 import { AboutusComponent } from './components/aboutus/aboutus.component';
+import { OurclientsComponent } from './components/ourclients/ourclients.component';
 
 
 
@@ -13,7 +14,8 @@ const routes: Routes = [
   {path:'home-page',component:HomePageComponent},
   {path : 'contact', component : ContactComponent},
   {path:'services-page',component:ServicesComponent},
-  {path:'aboutus', component:AboutusComponent}
+  {path:'aboutus', component:AboutusComponent},
+  {path:'clients', component:OurclientsComponent}
 ];
 
 @NgModule({

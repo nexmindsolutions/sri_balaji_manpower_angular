@@ -11,6 +11,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { OurclientsComponent } from './components/ourclients/ourclients.component';
 
 
 
@@ -24,7 +25,8 @@ import { HttpClientModule } from '@angular/common/http';
     ServicesComponent,
     AboutusComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    OurclientsComponent
   ],
   imports: [
     BrowserModule,
