@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class FormservicesService {
 
-  private apiUrl = 'http://localhost:5500/api/submit-form';
+  private apiUrl = 'https://sribalajimanpowerservices.in/5500/api/submit-form';
 
   constructor(private http: HttpClient) {}
 

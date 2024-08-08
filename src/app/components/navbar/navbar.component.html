@@ -1,6 +1,6 @@
 
   <!-- First Navbar with contact info and social media icons -->
-  <nav class="navbar navbar-expand-lg navbar-custom">
+  <!-- <nav class="navbar navbar-expand-lg navbar-custom">
     <div class="container">
         <span class="navbar-text">
             <i class="fas fa-phone-alt" style="margin-left: 4px;"></i> 9700144434 &nbsp;
@@ -15,12 +15,14 @@
             <a href="#"><i class="fab fa-linkedin-in"></i></a>
         </div>
     </div>
-</nav>
+</nav> -->
 
 <!-- Second Navbar with navigation links -->
 <nav class="navbar navbar-expand-lg navbar-light bg-white shadow" id="navcmd">
     <a class="navbar-brand" href="#">
-        <img class="h-10 mx-4" src="https://t3.ftcdn.net/jpg/05/21/37/96/360_F_521379673_CSAgf0gMSlPThHySNGLYRRrDNw4Q7vCc.jpg" alt="Logo">
+        <img class="h-10 w-3    mx-4" style="height: 50px; width: 70px;"
+         src="assets/img/Logo.jpeg" 
+        alt="Logo">
       
     </a>
     <button class="navbar-toggler" type="button" (click)="toggleMenu()">
@@ -28,16 +30,16 @@
     </button>
     <div class="collapse navbar-collapse  mx-4" [ngClass]="{'show': isMenuOpen}" id="navbarNav" style="margin-right: 40px;">
         <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
+            <li class="nav-item mx-4">
                 <a class="nav-link" [routerLink]="['/home-page']">HOME</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" [routerLink]="['/services-page']">SERVICE</a>
+            <li class="nav-item mx-4">
+                <a class="nav-link" [routerLink]="['/services-page']">SERVICES</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item mx-4">
                 <a class="nav-link" [routerLink]="['/aboutus']">ABOUT</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item mx-4">
                 <a class="nav-link" [routerLink]="['/contact']">CONTACT</a>
             </li>
         </ul>
