@@ -1,7 +1,52 @@
-/* html, body {
-  height: 80%;
-  margin: 0;
-} */
+/* marquee */
+/* Container styles */
+.scrolling-text-container {
+  /* background-color: #eff5ff; */
+  background-color:rgb(224 242 254);
+  border-radius: 4px;
+  overflow: hidden;
+  width: 100%;
+  /* position: relative; */
+}
+
+/* Inner container styles */
+.scrolling-text-inner {
+  display: flex;
+  white-space: nowrap;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 8px 0;
+ 
+}
+
+/* Text styles */
+.scrolling-text {
+  display: flex;
+  animation: scroll-left 13s linear infinite; /* Adjust the speed as needed */
+  width:auto;
+}
+
+.scrolling-text-item {
+  padding: 0 30px;
+  flex-shrink: 0; /* Prevents the item from shrinking */
+}
+
+/* Pause the animation when a user hovers over it */
+.scrolling-text-container:hover .scrolling-text {
+  animation-play-state: paused;
+}
+
+/* Setting the Animation using Keyframes */
+@keyframes scroll-left {
+  0% {
+      transform: translateX(0);
+  }
+  100% {
+      transform: translateX(-50%);
+  }
+}
+
+/* // */
 
 .overlay {
   position: fixed;
